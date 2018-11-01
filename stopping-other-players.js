@@ -6,7 +6,7 @@
     // Assign the player name to setPlayer
     var setPlayer = Object.keys(videojs.players)[x];
     // Define the ready event for the player
-    videojs(setPlayer).ready(function() {
+    videojs.getPlayer(setPlayer).ready(function() {
       // Assign this player to a variable
       myPlayer = this;
       // Assign and event listener for play event
